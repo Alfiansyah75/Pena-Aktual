@@ -1,0 +1,632 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.homepage {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 31, 50, 1) 0%,
+    rgba(21, 67, 120, 1) 50%,
+    rgba(47, 95, 152, 1) 100%
+  );
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  min-height: 156px;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+  margin-inline: auto;
+}
+
+.navbar .logo{
+  display: flex;
+  padding-left: 20px;
+}
+
+.navbar .box-navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 156px;
+}
+
+.navbar .box-navbar .menu-navbar ul{
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar .box-navbar .menu-navbar ul li{
+  list-style: none;
+  margin-inline: 25px;
+}
+
+.navbar .box-navbar .menu-navbar ul li a{
+  color: #203b5c;
+  font-family: "InterBold", sans-serif;
+  cursor: pointer;
+  align-items: center;
+  font-weight: bold;
+  position: relative;
+  padding: auto 100px;
+  text-decoration: none;
+}
+
+.navbar .box-navbar .menu-navbar ul li a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #203b5c;
+  margin: 0 ;
+  transition:  0.5s ease-in-out;
+}
+
+.navbar .box-navbar .menu-navbar ul li a:hover::after{
+   width: 100%;
+}
+
+
+  /* NAVBAR SEARCH BAR  */
+.navbar .search-bar{
+  padding-right: 100px;
+}
+
+.navbar .search-box {
+  border: 2.5px solid #203b5c;
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+.search-box input {
+  font-family: "InterBold", sans-serif;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 200px;
+}
+
+  /* ISI */
+.judul-berita{
+  display: flex;
+  justify-content: center;
+}
+
+.judul-berita h1{
+  font-family: "InterBold",sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+  max-width: 1000px;
+  margin-top: 100px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* ===== LAYOUT 2 KOLOM ===== */
+.layout-berita{
+  display: flex;
+  gap: 40px;
+  max-width: 1550px;
+  margin-left: 100px;
+  margin-top: 10px;
+  align-items: flex-start;
+}
+
+/* ===== KIRI — KONTEN BERITA ===== */
+.berita{
+  flex: 1;
+  color: #fff;
+  font-family: "InterBold", sans-serif;
+}
+
+
+.penulis{
+  font-family: "InterBold", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.foto-kopi-mandja {
+  max-width: 900px;
+}
+
+.foto-kopi-mandja img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.copyright-katsu-sen{
+  font-style: italic;
+  font-weight: 200;
+  margin-top: 6px;
+  width: 800px;
+}
+
+.isi-berita{
+  font-family: "InterBold", sans-serif;
+  font-size: 18px;
+  line-height: 1.9;
+  text-align: justify;
+  margin-top: 70px;
+  max-width: 900px;
+}
+
+/* ===== KANAN — ASIDE ===== */
+.iklan-dan-berita-lain{
+  width: 360px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-right: 60px;
+}
+
+/* IKLAN */
+.advertisement{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.advertisement img{
+  width: 100%;
+  max-width: 348px;
+  height: auto;
+}
+
+/* CARD PUTRI DESEBEL */
+.text-feature-putri-desebel{
+  background: #0b2a4a;
+  overflow: hidden;
+}
+
+.foto-putri-desebel{
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-putri-desebel img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.foto-putri-desebel::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, 
+  transparent 40%, rgba(0,0,0,.6)
+  );
+}
+
+.text-feature-putri-desebel {
+  padding: 20px;
+}
+
+.text-feature-putri-desebel a{
+  text-decoration: none;
+}
+
+.text-feature-putri-desebel h2{
+  font-family: "InterBold", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.text-feature-putri-desebel h3{
+  font-family: "InterBold", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.feature-putri-desebel:hover h2{
+  color: #FFE2AF;
+}
+
+.feature-putri-desebel:hover h3{
+  color: #FFE2AF;
+}
+
+
+.foto-putri-desebel img{
+  transition: transform 0.4s ease;
+}
+
+.feature-putri-desebel:hover .foto-putri-desebel img{
+  transform: scale(1.10);
+}
+
+
+
+
+/* CARD SENJA SENAYAN */
+.text-feature-senja-senayan{
+  background: #0b2a4a;
+  overflow: hidden;
+}
+
+.foto-senja-senayan{
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-senja-senayan img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.foto-senja-senayan::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, 
+  transparent 40%, rgba(0,0,0,.6)
+  );
+}
+
+.text-feature-senja-senayan {
+  padding: 20px;
+}
+
+.text-feature-senja-senayan a{
+  text-decoration: none;
+}
+
+.text-feature-senja-senayan h2{
+  font-family: "InterBold", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.text-feature-senja-senayan h3{
+  font-family: "InterBold", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.feature-senja-senayan:hover h2{
+  color: #FFE2AF;
+}
+
+.feature-senja-senayan:hover h3{
+  color: #FFE2AF;
+}
+
+
+.foto-senja-senayan img{
+  transition: transform 0.4s ease;
+}
+
+.feature-senja-senayan:hover .foto-senja-senayan img{
+  transform: scale(1.10);
+}
+
+/* IKLAN */
+.advertisement-mid {
+  width: 349px;
+  height: 272px;
+  background: #000; /* biar kelihatan */
+  overflow: hidden;
+}
+
+.ads-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* DEMIT  */
+.text-feature-madrid{
+  background: #0b2a4a;
+  overflow: hidden;
+}
+
+.foto-madrid{
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-madrid img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.foto-madrid::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom, transparent 40%, rgba(0,0,0,.6)
+    );
+}
+
+.text-feature-madrid {
+  padding: 20px;
+}
+
+.text-feature-madrid a{
+  text-decoration: none;
+}
+
+.text-feature-madrid h2{
+  font-family: "InterBold", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.text-feature-madrid h3{
+  font-family: "InterBold", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+.feature-real-madrid:hover h2{
+  color: #FFE2AF;
+}
+
+.feature-real-madrid:hover h3{
+  color: #FFE2AF;
+}
+
+.feature-real-madrid:hover h4{
+  color: #FFE2AF;
+}
+
+.foto-madrid img{
+  transition: 0.4s ease;
+}
+
+.feature-real-madrid:hover .foto-madrid img{
+  transform: scale(1.10);
+}
+
+
+/* KATSU - SEN  */
+.text-feature-katsu-sen{
+  background: #0b2a4a;
+  overflow: hidden;
+}
+
+.foto-katsu-sen{
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-katsu-sen img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.foto-katsu-sen::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom, transparent 40%, rgba(0,0,0,.6)
+    );
+}
+
+.text-feature-katsu-sen {
+  padding: 20px;
+}
+
+.text-feature-katsu-sen a{
+  text-decoration: none;
+}
+
+.text-feature-katsu-sen h2{
+  font-family: "InterBold", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.text-feature-katsu-sen h3{
+  font-family: "InterBold", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+.feature-katsu-sen:hover h2{
+  color: #FFE2AF;
+}
+
+.feature-katsu-sen:hover h3{
+  color: #FFE2AF;
+}
+
+.feature-katsu-sen:hover h4{
+  color: #FFE2AF;
+}
+
+.foto-katsu-sen img{
+  transition: 0.4s ease;
+}
+
+.feature-katsu-sen:hover .foto-katsu-sen img{
+  transform: scale(1.10);
+}
+
+
+
+
+/* Komentar  */
+
+.comment-section {
+  font-family: "InterBold", sans-serif;
+  max-width: 900px;
+  margin: 50px 100px;
+  background: #ffffff;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.comment-section h3 {
+  margin-bottom: 20px;
+  color: #0b2a4a;
+}
+
+.comment-form input,
+.comment-form textarea {
+  font-family: "InterBold",sans-serif;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.comment-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.comment-form button {
+  font-family: "InterBold", sans-serif;
+  background: #0b2a4a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+.comment-form button:hover {
+  background: #12406f;
+}
+
+/* List komentar */
+
+.comment-item {
+  padding: 15px;
+}
+
+.comment-item h4 {
+  margin-bottom: 5px;
+  color: #0b2a4a;
+  font-size: 15px;
+}
+
+.comment-item p {
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+/* FOOTER  */
+.footer-shape{
+  font-family: "InterBold", sans-serif;
+  width: 100%;
+  background: #fff;
+  margin-top: 100px;
+  padding: 40px 0 20px;
+  height: 231px;
+}
+
+.footer .footer-shape-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-inline: 120px;
+}
+
+/* EXPLORE */
+.explore,
+.company-profile,
+.follow-us{
+  color: #203b5c;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.explore ul,
+.company-profile ul{
+  display: flex;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.explore ul li,
+.company-profile ul li{
+  list-style: none;
+}
+
+.explore ul li a,
+.company-profile ul li a{
+  font-size: 24px;
+  text-decoration: none;
+  color: #203b5c;
+  font-weight: bold;
+}
+
+/* FOLLOW US */
+.logo-sosmed{
+  display: flex;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.logo-sosmed img{
+  width: 50px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+
+.logo-sosmed img:hover{
+  filter: grayscale(0%);
+}
+
+/* COPYRIGHT */
+.copyright{
+  font-family: "InterBold", sans-serif;
+  margin-top: -50px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #203b5c;
+}

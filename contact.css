@@ -1,0 +1,241 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-page {
+    background: linear-gradient(
+    180deg,
+    rgba(15, 31, 50, 1) 0%,
+    rgba(21, 67, 120, 1) 50%,
+    rgba(47, 95, 152, 1) 100%
+    );
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container {
+  width: 100%;
+  min-height: 156px;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+  margin-inline: auto;
+}
+
+.navbar .logo{
+  display: flex;
+  padding-left: 20px;
+}
+
+.navbar .box-navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 156px;
+}
+
+.navbar .box-navbar .menu-navbar ul{
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar .box-navbar .menu-navbar ul li{
+  list-style: none;
+  margin-inline: 25px;
+}
+
+.navbar .box-navbar .menu-navbar ul li a{
+  color: #203b5c;
+  font-family: "InterBold", sans-serif;
+  cursor: pointer;
+  align-items: center;
+  font-weight: bold;
+  position: relative;
+  padding: auto 100px;
+  text-decoration: none;
+}
+
+.navbar .box-navbar .menu-navbar ul li a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #203b5c;
+  margin: 0 ;
+  transition:  0.5s ease-in-out;
+}
+
+.navbar .box-navbar .menu-navbar ul li a:hover::after{
+   width: 100%;
+}
+
+
+  /* NAVBAR SEARCH BAR  */
+.navbar .search-bar{
+  padding-right: 100px;
+}
+
+.navbar .search-box {
+  border: 2.5px solid #203b5c;
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+.search-box input {
+  font-family: "InterBold", sans-serif;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 200px;
+}
+
+.contact-section {
+    font-family: "InterBold",sans-serif;
+    width: 100%;
+    padding: 80px 20px;
+    color: #fff;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.contact-desc {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  color: #fff;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  background: #2f7bd6;
+  box-shadow: 0px 5px 3px rgba(0,0,0,0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* IMG ICON */
+.icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* FOOTER  */
+.footer-shape{
+  font-family: "InterBold", sans-serif;
+  width: 100%;
+  background: #fff;
+  margin-top: 200px;
+  padding: 40px 0 20px;
+  height: 231px;
+}
+
+.footer .footer-shape-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-inline: 120px;
+}
+
+/* EXPLORE */
+.explore,
+.company-profile,
+.follow-us{
+  color: #203b5c;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.explore ul,
+.company-profile ul{
+  display: flex;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.explore ul li,
+.company-profile ul li{
+  list-style: none;
+}
+
+.explore ul li a,
+.company-profile ul li a{
+  font-size: 24px;
+  text-decoration: none;
+  color: #203b5c;
+  font-weight: bold;
+}
+
+/* FOLLOW US */
+.logo-sosmed{
+  display: flex;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.logo-sosmed img{
+  width: 50px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+
+.logo-sosmed img:hover{
+  filter: grayscale(0%);
+}
+
+/* COPYRIGHT */
+.copyright{
+  font-family: "InterBold", sans-serif;
+  margin-top: -50px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #203b5c;
+}
